@@ -1,0 +1,38 @@
+
+.btn {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 125px;
+
+  &__primary {
+    color: var(--clr-neutral-50);
+    background-color: var(--clr-primary-600);
+  }
+  &__secondary {
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-secondary-600);
+  }
+
+  &__small {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+  &__medium {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+  &__large {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+

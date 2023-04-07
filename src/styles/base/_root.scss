@@ -1,0 +1,32 @@
+@use '../abstract' as *;
+
+:root {
+
+  --white: #ffffff;
+  --error: #d42424;
+  // --black: #0a0a0a;
+  --background: #222423;
+  --color: #8D8D8E;
+
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --clr-#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  @each $screen-size, $font-sizes in $type-scale {
+    @if $screen-size == large {
+      @each $size, $value in $font-sizes {
+        --fs-#{$size}: #{$value};
+      }
+    } @else {
+        @include for-mobile {    
+          @each $size, $value in $font-sizes {
+            --fs-#{$size}: #{$value};
+          }
+        }
+    }
+   
+  }
+      
+}
