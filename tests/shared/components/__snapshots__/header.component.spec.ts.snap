@@ -14,17 +14,12 @@ exports[`HeaderComponent debe hacer match con el snapshot 1`] = `
       width="40"
     />
     <span>
-      Welcome
+      David Seco
     </span>
-    <a
-      color="primary"
-      href="#projects"
-    >
-       projects 
-    </a>
     <div
       class="spacer"
     />
+    <app-icon />
     <app-toggle-button>
       <label
         class="switch"
@@ -38,7 +33,7 @@ exports[`HeaderComponent debe hacer match con el snapshot 1`] = `
       </label>
     </app-toggle-button>
     <button
-      class="btn btn__primary"
+      class="btn btn__secondary"
     >
       Button
     </button>

@@ -3,20 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { SharedModule } from './shared/shared.module';
+import { IconModule } from './shared/icon/icon.module';
+import { ToggleButtonModule } from './shared/toggle-button/toggle-button.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectsComponent,
     HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    IconModule,
+    ToggleButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

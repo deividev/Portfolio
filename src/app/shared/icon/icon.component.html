@@ -1,0 +1,14 @@
+<svg
+  [attr.data-testid]="config.icon"
+  [class]="config.customClass"
+  (click)="config.onClick?.()"
+  [attr.width]="config.size ? config.size + 'px' : '24px'"
+  [attr.height]="config.size ? config.size + 'px' : '24px'"
+  [attr.viewBox]="vBox"
+>
+  <path fill="none" [attr.d]="vBoxPath" />
+  <path
+    [attr.fill]="config.customClass && config.customClass.fill ? config.customClass.fill : iconColor"
+    [attr.d]="icons[config.icon]"
+  ></path>
+</svg>

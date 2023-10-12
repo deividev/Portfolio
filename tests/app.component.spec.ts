@@ -3,20 +3,27 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from '../src/app/app.component';
 import { ProjectsComponent } from '../src/app/pages/projects/projects.component';
 import { HeaderComponent } from '../src/app/shared/components/header/header.component';
-import { ToggleButtonComponent } from '../src/app/shared/ui/toggle-button/toggle-button.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from '../src/app/app-routing.module';
+import { IconModule } from '../src/app/shared/icon/icon.module';
+import { ToggleButtonModule } from '../src/app/shared/toggle-button/toggle-button.module';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        BrowserModule,
+        AppRoutingModule,
+        IconModule,
+        ToggleButtonModule
       ],
       declarations: [
         AppComponent,
         ProjectsComponent,
         HeaderComponent,
-        ToggleButtonComponent
       ],
+
     }).compileComponents();
   });
 
