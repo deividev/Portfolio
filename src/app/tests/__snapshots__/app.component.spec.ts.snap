@@ -577,15 +577,8 @@ exports[`AppComponent debe hacer match con el snapshot 1`] = `
       </a>
     </div>
     <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. A cumque vitae dolore veritatis voluptas soluta iste quam porro! Expedita ratione aliquid repellat quae ex quia nulla, laborum consequuntur! Accusantium, ea.
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. A cumque vitae dolore veritatis voluptas soluta iste quam porro! Expedita ratione aliquid repellat quae ex quia nulla, laborum consequuntur! Accusantium, ea. 
     </p>
-    <app-projects
-      id="projects"
-    >
-      <p>
-        projects works!
-      </p>
-    </app-projects>
     <footer>
        Love Angular?  
       <a
