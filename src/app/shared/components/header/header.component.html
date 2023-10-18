@@ -9,6 +9,17 @@
   <!-- <app-icon [config]="{ icon: 'angular', size: 32, color: 'blue', customClass: 'my-custom-class' }">Paco</app-icon> -->
   <!-- <a href="#projects" color="primary"> projects </a> -->
   <div class="spacer"></div>
+  <!-- MENU    -->
+  <div *ngFor="let section of sections">
+    <a
+    aria-label="Angular on twitter"
+    target="_blank"
+    rel="noopener"
+    href="projects"
+    title="Twitter"
+  >{{section.title}}</a>
+  </div>
+  <!-- MENU    -->
   <app-icon
     [config]="{
       icon: 'ts',
