@@ -1,6 +1,7 @@
+@forward '../base/root';
 
- 
+
 [data-theme="light"] {
-  --background: #ffffff;
-  --color: #222423;
+  --background: var(--white);
+  --color: var(--black);
 }
