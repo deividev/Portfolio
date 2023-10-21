@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ICONS } from '@core/constants';
+import { ThemeService } from '@shared/services/theme.service';
 
 interface IconConfig {
   icon: string;
@@ -29,7 +30,19 @@ export class IconComponent {
   vBox = '';
   vBoxPath = '';
 
+
   icons = ICONS;
+
+  constructor(private themeService: ThemeService) {
+    this.themeService.theme$.subscribe((theme) => {
+      // Detecta cambios en el tema y actualiza el color del icono
+      if (theme === 'dark') {
+        this.config.customClass = { fill: '#fff' };
+      } else {
+        this.config.customClass = { fill: '#333' };
+      }
+    });
+  }
 
   ngOnInit() {
     this.iconColor = this.config.color || 'black';
