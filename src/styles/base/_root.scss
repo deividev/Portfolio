@@ -2,11 +2,12 @@
 
 :root {
 
+  --black: #111111;
   --white: #ffffff;
   --error: #d42424;
   // --black: #0a0a0a;
   --background: #222423;
-  --color: #8D8D8E;
+  --color: var(--white);
 
   @each $color, $shades in $colors {
     @each $shade, $value in $shades {
@@ -20,13 +21,13 @@
         --fs-#{$size}: #{$value};
       }
     } @else {
-        @include for-mobile {    
+        @include for-mobile {
           @each $size, $value in $font-sizes {
             --fs-#{$size}: #{$value};
           }
         }
     }
-   
+
   }
-      
+
 }
