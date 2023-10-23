@@ -8,6 +8,7 @@ import { IconModule } from './shared/components/icon/icon.module';
 import { ToggleButtonModule } from './shared/components/toggle-button/toggle-button.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ButtonModule } from '@shared/components/button/button.module';
+import { TextModule } from '@shared/components/text/text.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ButtonModule } from '@shared/components/button/button.module';
     HttpClientModule,
     IconModule,
     ToggleButtonModule,
-    ButtonModule
+    ButtonModule,
+    TextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
