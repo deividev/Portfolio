@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from '@shared/components/header/header.component';
-import { ToggleButtonComponent } from '@shared/toggle-button/toggle-button.component';
+import { ToggleButtonComponent } from '@shared/components/toggle-button/toggle-button.component';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;

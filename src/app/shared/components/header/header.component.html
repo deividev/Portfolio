@@ -22,16 +22,53 @@
   <!-- MENU    -->
   <app-icon
     [config]="{
-      icon: 'ts',
+      icon: 'instagram',
       size: 24,
-      color: '',
+      color: 'green',
+      onClick: undefined,
+      customClass: undefined,
+    }"
+  ></app-icon>
+  <app-icon
+    [config]="{
+      icon: 'ts',
+      size: 20,
+      color: 'orange',
       onClick: undefined,
       customClass: undefined,
       vBox: '16'
     }"
   ></app-icon>
+  <app-icon
+  [config]="{
+    icon: 'linkedin',
+    size: 26,
+    onClick: undefined,
+    customClass: 'icon',
+  }"
+></app-icon>
+<app-icon
+  [config]="{
+    icon: 'jest',
+    size: 20,
+    onClick: undefined,
+    customClass: undefined,
+    vBox: '32'
+  }"
+></app-icon>
   <app-toggle-button></app-toggle-button>
-  <button class="btn btn__secondary">Button</button>
+  <app-button [mode]="'primary'" [size]="'medium'" [disabled]="false">Botón
+    <app-icon
+  [config]="{
+    icon: 'jest',
+    size: 20,
+    color: 'white',
+    onClick: undefined,
+    customClass: undefined,
+    vBox: '32'
+  }"
+></app-icon>
+  </app-button>
   <a
     aria-label="Angular on twitter"
     target="_blank"

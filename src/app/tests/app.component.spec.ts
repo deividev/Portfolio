@@ -4,8 +4,8 @@ import { AppComponent } from '../app.component';
 import { HeaderComponent } from '@shared/components/header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from '../app-routing.module';
-import { IconModule } from '@shared/icon/icon.module';
-import { ToggleButtonModule } from '@shared/toggle-button/toggle-button.module';
+import { IconModule } from '@shared/components/icon/icon.module';
+import { ToggleButtonModule } from '@shared/components/toggle-button/toggle-button.module';
 
 describe('AppComponent', () => {
   beforeEach(async () => {

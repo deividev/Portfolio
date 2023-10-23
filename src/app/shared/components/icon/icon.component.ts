@@ -36,11 +36,14 @@ export class IconComponent {
   constructor(private themeService: ThemeService) {
     this.themeService.theme$.subscribe((theme) => {
       // Detecta cambios en el tema y actualiza el color del icono
-      if (theme === 'dark') {
-        this.config.customClass = { fill: '#fff' };
-      } else {
-        this.config.customClass = { fill: '#333' };
+      if(!this.config.color){
+        if (theme === 'dark') {
+          this.config.customClass = { fill: '#fff' };
+        } else {
+          this.config.customClass = { fill: '#333' };
+        }
       }
+
     });
   }
 

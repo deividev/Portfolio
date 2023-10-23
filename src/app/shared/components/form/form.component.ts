@@ -7,7 +7,7 @@ import {
   ValidationErrors,
   Validators,
 } from '@angular/forms';
-import { emailValidator } from '../../core/utilities';
+import { emailValidator } from '../../../core/utilities';
 
 @Component({
   selector: 'app-form',
