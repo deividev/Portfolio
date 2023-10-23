@@ -1,6 +1,8 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from '@shared/components/header/header.component';
+import { IconComponent } from '@shared/components/icon/icon.component';
 import { ToggleButtonComponent } from '@shared/components/toggle-button/toggle-button.component';
 
 describe('HeaderComponent', () => {
@@ -9,7 +11,8 @@ describe('HeaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderComponent, ToggleButtonComponent ]
+      declarations: [ HeaderComponent, ToggleButtonComponent, IconComponent ],
+      imports: [HttpClientModule]
     })
     .compileComponents();
 

@@ -1,10 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ToggleButtonComponent } from '@shared/components/toggle-button/toggle-button.component';
+import { ThemeService } from '@shared/services/theme.service';
 
 describe('ToggleButtonComponent', () => {
   let component: ToggleButtonComponent;
   let fixture: ComponentFixture<ToggleButtonComponent>;
+  let themeService: ThemeService = new ThemeService();
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -21,7 +23,7 @@ describe('ToggleButtonComponent', () => {
   });
 
   it('test_toggle_to_light_mode', () => {
-    const component = new ToggleButtonComponent();
+    const component = new ToggleButtonComponent(themeService);
     const mockEvent = { target: { checked: true } };
     component.toggleMode(mockEvent);
     expect(document.querySelector('body')?.getAttribute('data-theme')).toBe(
@@ -30,7 +32,7 @@ describe('ToggleButtonComponent', () => {
   });
 
   it('test_toggle_to_dark_mode', () => {
-    const component = new ToggleButtonComponent();
+    const component = new ToggleButtonComponent(themeService);
     const mockEvent = { target: { checked: false } };
     component.toggleMode(mockEvent);
     expect(document.querySelector('body')?.getAttribute('data-theme')).toBe(

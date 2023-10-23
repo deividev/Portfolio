@@ -6,11 +6,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from '../app-routing.module';
 import { IconModule } from '@shared/components/icon/icon.module';
 import { ToggleButtonModule } from '@shared/components/toggle-button/toggle-button.module';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
+        HttpClientModule,
         RouterTestingModule,
         BrowserModule,
         AppRoutingModule,
