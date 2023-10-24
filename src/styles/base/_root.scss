@@ -6,7 +6,7 @@
   --white: #ffffff;
   --error: #d42424;
   // --black: #0a0a0a;
-  --background: #222423;
+  --bg-head: var(--clr-bg-50);
   --color: var(--white);
 
   @each $color, $shades in $colors {
